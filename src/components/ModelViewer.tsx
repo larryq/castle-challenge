@@ -19,8 +19,10 @@ import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import * as THREE from "three";
 import SceneContent, { type Note } from "./SceneContent";
 import Spinner from "./Spinner";
+// @ts-expect-error: GLSL module is not yet typed
 import surfaceVertexShader from "../shaders/vertex.glsl";
 import Image from "next/image";
+// @ts-expect-error: GLSL module is not yet typed
 import surfaceFragmentShader from "../shaders/fragment.glsl";
 import SmokeScreen from "./SmokeScreen.jsx";
 
