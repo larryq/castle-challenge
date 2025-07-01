@@ -3,7 +3,7 @@ import { Html } from "@react-three/drei";
 function Loader3() {
   return (
     <Html>
-      <div id="loading-dialog" class="hidden">
+      <div id="loading-dialog" className="hidden">
         <img src="volcano4.jpeg" alt="Loading..." id="loading-image" />
       </div>
     </Html>
