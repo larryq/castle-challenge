@@ -110,8 +110,8 @@ const AnimationHandler: React.FC<{
   setCurrentCameraPosition: React.Dispatch<
     React.SetStateAction<THREE.Vector3 | null>
   >;
-  cameraRef: React.RefObject<THREE.PerspectiveCamera>;
-  orbitControlsRef: React.RefObject<OrbitControlsImpl>;
+  cameraRef: React.RefObject<THREE.PerspectiveCamera | null>;
+  orbitControlsRef: React.RefObject<OrbitControlsImpl | null>;
 }> = ({
   animationState,
   setAnimationState,
