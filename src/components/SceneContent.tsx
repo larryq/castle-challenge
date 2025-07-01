@@ -6,7 +6,9 @@ import * as THREE from "three";
 import StickyNote from "./StickyNote";
 import Loader3 from "./Loader3";
 import { extend, useFrame } from "@react-three/fiber";
+// @ts-expect-error: GLSL module is not yet typed
 import surfaceVertexShader from "../shaders/vertex.glsl";
+// @ts-expect-error: GLSL module is not yet typed
 import surfaceFragmentShader from "../shaders/fragment.glsl";
 import Clouds from "./Clouds.jsx";
 
@@ -122,11 +124,13 @@ const Model: React.FC<ModelProps> = ({ modelPath }) => {
   useFrame((state, delta) => {
     if (shaderMaterialRef.current) {
       // Update your uniform for animation
+      // @ts-expect-error: GLSL module is not yet typed
       shaderMaterialRef.current.uniforms.uTime.value += delta;
     }
 
     if (grassShaderMaterialRef.current) {
       // Update your uniform for animation
+      // @ts-expect-error: GLSL module is not yet typed
       grassShaderMaterialRef.current.uniforms.uTime.value += delta;
     }
   });
