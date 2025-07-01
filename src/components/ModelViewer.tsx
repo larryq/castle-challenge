@@ -306,8 +306,8 @@ const ModelViewer: React.FC = () => {
         <Suspense
           fallback={
             <Html center>
-              {/* <Spinner /> */}
-              <Loader3 />
+              <Spinner />
+              {/* <Loader3 /> */}
             </Html>
           }
         >
@@ -337,7 +337,7 @@ const ModelViewer: React.FC = () => {
           enableZoom={true}
           enableRotate={true}
           minPolarAngle={0}
-          maxPolarAngle={Math.PI / 1.5}
+          maxPolarAngle={Math.PI / 2.2}
           //target={initialControlTarget} // Set initial target
           target={new THREE.Vector3(0, 0, 0)}
         />

@@ -36,7 +36,7 @@ export default function AtmosphericClouds() {
             bounds={[27.3, 0.1, 57.5]}
             color="#eed0d0"
             seed={8}
-            position={[-4.5, 192.0, -1.9]}
+            position={[-114.5, 192.0, -1.9]}
           />
           <Cloud
             ref={cloud0}
